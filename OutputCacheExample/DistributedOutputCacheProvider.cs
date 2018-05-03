@@ -11,7 +11,7 @@ namespace OutputCacheExample
             RedisCacheManager.Instance.Subscribe(Consumer);
         }
 
-        private static void Consumer(ArabamCacheModel data)
+        private static void Consumer(CacheModel data)
         {
             if (data == null)
                 return;
@@ -47,7 +47,7 @@ namespace OutputCacheExample
             if (expiry <= 0)
                 expiry = 1;
 
-            var model = new ArabamCacheModel
+            var model = new CacheModel
             {
                 Data = entry,
                 Key = key,

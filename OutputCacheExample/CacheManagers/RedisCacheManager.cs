@@ -34,7 +34,7 @@ namespace OutputCacheExample.CacheManagers
             _redis = ConnectionMultiplexer.Connect(connection);
         }
 
-        public ArabamCacheModel Get(string key)
+        public CacheModel Get(string key)
         {
             var rValue = Database.StringGet(key);
             if (!rValue.HasValue)
@@ -52,7 +52,7 @@ namespace OutputCacheExample.CacheManagers
             return null;
         }
 
-        public void Set(ArabamCacheModel data, bool publish = true)
+        public void Set(CacheModel data, bool publish = true)
         {
             if (data == null)
                 return;
@@ -75,7 +75,7 @@ namespace OutputCacheExample.CacheManagers
             Database.KeyDeleteAsync(key).ConfigureAwait(false);
             if (publish)
             {
-                Publish(new ArabamCacheModel
+                Publish(new CacheModel
                 {
                     Key = key
                 });
@@ -90,7 +90,7 @@ namespace OutputCacheExample.CacheManagers
                 foreach (var key in keys)
                 {
                     Database.KeyDeleteAsync(key).ConfigureAwait(false);
-                    Publish(new ArabamCacheModel
+                    Publish(new CacheModel
                     {
                         Key = key
                     });
@@ -113,7 +113,7 @@ namespace OutputCacheExample.CacheManagers
             }
         }
 
-        public void Subscribe(Action<ArabamCacheModel> consumer)
+        public void Subscribe(Action<CacheModel> consumer)
         {
             Subscriber
                 .SubscribeAsync(new RedisChannel(RedisChannelName, RedisChannel.PatternMode.Literal), (channel, message) => consumer(Deserialize(message)))
@@ -127,7 +127,7 @@ namespace OutputCacheExample.CacheManagers
                 .ConfigureAwait(false);
         }
 
-        public void Publish(ArabamCacheModel data)
+        public void Publish(CacheModel data)
         {
             Subscriber
                 .PublishAsync(RedisChannelName, Serialize(data))
@@ -142,14 +142,14 @@ namespace OutputCacheExample.CacheManagers
             return Encoding.UTF8.GetBytes(jsonString);
         }
 
-        protected virtual ArabamCacheModel Deserialize(byte[] serializedObject)
+        protected virtual CacheModel Deserialize(byte[] serializedObject)
         {
             if (serializedObject == null)
                 return null;
 
             var jsonString = Encoding.UTF8.GetString(serializedObject);
 
-            return JsonConvert.DeserializeObject<ArabamCacheModel>(jsonString, _settings);
+            return JsonConvert.DeserializeObject<CacheModel>(jsonString, _settings);
         }
 
         // ReSharper disable once InconsistentNaming

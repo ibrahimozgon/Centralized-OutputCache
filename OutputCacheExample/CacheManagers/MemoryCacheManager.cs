@@ -14,16 +14,16 @@ namespace OutputCacheExample.CacheManagers
 
         private MemoryCacheManager()
         {
-            _cache = new MemoryCache("arabamOutputCache", new NameValueCollection());
+            _cache = new MemoryCache("distributedOutputCache", new NameValueCollection());
         }
 
-        public ArabamCacheModel Get(string key)
+        public CacheModel Get(string key)
         {
             if (IsSet(key))
-                return (ArabamCacheModel)_cache[key];
+                return (CacheModel)_cache[key];
             return null;
         }
-        public void Set(ArabamCacheModel data)
+        public void Set(CacheModel data)
         {
             if (data == null)
                 return;

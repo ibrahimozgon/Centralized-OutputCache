@@ -24,9 +24,9 @@ namespace OutputCacheTests
             RedisCacheManager.Instance.Set(GetDefaultValue());
         }
 
-        private ArabamCacheModel GetDefaultValue()
+        private CacheModel GetDefaultValue()
         {
-            return new ArabamCacheModel
+            return new CacheModel
             {
                 Key = key,
                 Data = new SomeData
@@ -36,9 +36,9 @@ namespace OutputCacheTests
                 }
             };
         }
-        private ArabamCacheModel GetRandomVal()
+        private CacheModel GetRandomVal()
         {
-            return new ArabamCacheModel
+            return new CacheModel
             {
                 Key = key + _random.Next(),
                 Data = new SomeData
@@ -90,7 +90,7 @@ namespace OutputCacheTests
             Thread.Sleep(10000);
         }
 
-        private static void Consumer(ArabamCacheModel obj)
+        private static void Consumer(CacheModel obj)
         {
             Console.WriteLine(obj.Data);
             Console.WriteLine(obj.Key);

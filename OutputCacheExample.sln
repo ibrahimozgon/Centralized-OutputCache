@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputCacheExample", "OutputCacheExample\OutputCacheExample.csproj", "{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputCacheTests", "OutputCacheTests\OutputCacheTests.csproj", "{F6B35E21-AE77-4D9A-90D1-B64F3CB9A3FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B35E21-AE77-4D9A-90D1-B64F3CB9A3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B35E21-AE77-4D9A-90D1-B64F3CB9A3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B35E21-AE77-4D9A-90D1-B64F3CB9A3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B35E21-AE77-4D9A-90D1-B64F3CB9A3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3336F2B-8C06-41D5-99AD-5918868134A5}
+	EndGlobalSection
+EndGlobal

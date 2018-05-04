@@ -4,9 +4,9 @@ using OutputCacheExample.CacheManagers;
 
 namespace OutputCacheExample
 {
-    public class ArabamOutputCacheProvider : OutputCacheProvider
+    public class DistributedOutputCacheProvider : OutputCacheProvider
     {
-        public ArabamOutputCacheProvider()
+        public DistributedOutputCacheProvider()
         {
             RedisCacheManager.Instance.Subscribe(Consumer);
         }

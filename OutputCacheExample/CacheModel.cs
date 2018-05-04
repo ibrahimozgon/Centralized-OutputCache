@@ -2,9 +2,9 @@
 
 namespace OutputCacheExample
 {
-    public class ArabamCacheModel
+    public class CacheModel
     {
-        public ArabamCacheModel()
+        public CacheModel()
         {
             CreatedAt = DateTime.Now;
         }

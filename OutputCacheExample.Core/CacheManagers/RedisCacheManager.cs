@@ -3,7 +3,7 @@ using System.Text;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
-namespace OutputCacheExample.Web.CacheManagers
+namespace OutputCacheExample.Core.CacheManagers
 {
     public class RedisCacheManager : IDisposable
     {

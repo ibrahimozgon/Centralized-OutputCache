@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Web.Caching;
-using OutputCacheExample.Web.CacheManagers;
+using OutputCacheExample.Core.CacheManagers;
 
 namespace OutputCacheExample.Web.CacheProviders
 {

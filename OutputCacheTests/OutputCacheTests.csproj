@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CacheTests.cs" />
+    <Compile Include="KeyspaceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,9 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OutputCacheExample\OutputCacheExample.csproj">
+    <ProjectReference Include="..\OutputCacheExample.Web\OutputCacheExample.Web.csproj">
       <Project>{dc870cfb-6cb6-4596-91fc-8c0513fe8a19}</Project>
-      <Name>OutputCacheExample</Name>
+      <Name>OutputCacheExample.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

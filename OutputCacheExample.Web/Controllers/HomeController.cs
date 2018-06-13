@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.UI;
 using DevTrends.MvcDonutCaching;
 
-namespace OutputCacheExample.Controllers
+namespace OutputCacheExample.Web.Controllers
 {
     public class HomeController : Controller
     {

@@ -4,7 +4,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.WebPages;
 
-namespace OutputCacheExample
+namespace OutputCacheExample.Web
 {
     public class MvcApplication : HttpApplication
     {

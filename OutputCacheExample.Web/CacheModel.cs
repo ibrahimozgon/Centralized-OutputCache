@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OutputCacheExample
+namespace OutputCacheExample.Web
 {
     public class CacheModel
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputCacheExample", "OutputCacheExample\OutputCacheExample.csproj", "{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputCacheExample.Web", "OutputCacheExample.Web\OutputCacheExample.Web.csproj", "{DC870CFB-6CB6-4596-91FC-8C0513FE8A19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputCacheTests", "OutputCacheTests\OutputCacheTests.csproj", "{F6B35E21-AE77-4D9A-90D1-B64F3CB9A3FA}"
 EndProject

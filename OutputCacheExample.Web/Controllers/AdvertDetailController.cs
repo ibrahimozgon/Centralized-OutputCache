@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using DevTrends.MvcDonutCaching;
 
-namespace OutputCacheExample.Controllers
+namespace OutputCacheExample.Web.Controllers
 {
     public class AdvertDetailController : Controller
     {

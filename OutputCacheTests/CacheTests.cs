@@ -2,7 +2,8 @@
 using System.Threading;
 using NUnit.Framework;
 using OutputCacheExample;
-using OutputCacheExample.CacheManagers;
+using OutputCacheExample.Web;
+using OutputCacheExample.Web.CacheManagers;
 
 namespace OutputCacheTests
 {
